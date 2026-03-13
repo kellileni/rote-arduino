@@ -10,19 +10,28 @@ Data: 11/03/2026
 ## 1. Objetivo
 Fazer os testes de Arduino IDE e no tinkercad 
 
-## 2.Equipamentos utilizados neste laboratorio 
+🛠️ Hardware Utilizado (Detalhado)
+Com base nos componentes utilizados no seu laboratório:
 
--Cabo USB (Tipo A/B)    /    Jumpers
+Arduino Uno R3: O cérebro do projeto.
 
--Resistores   /   LEDs
+Ethernet Shield W5100: Responsável pela conectividade via cabo RJ45.
 
--Protoboard   /   Arduino UNO
+Cabo USB tipo A/B: Para transferência do código e alimentação inicial.
 
--Buzzer     /     Sensor DHT11
+Protoboard (Mini): Utilizada para prototipagem rápida.
 
--Ethernet Shield    /     -sensor Ultrassônico
+Jumpers (Macho-Macho): Cabos para conexões auxiliares.
 
--Roteador
+Sensores Extras (Visíveis na caixa):
+
+Sensor Ultrassônico HC-SR04 (Medição de distância).
+
+Sensor de Umidade e Temperatura DHT11 (Azul).
+
+Buzzer e LEDs (Para alertas visuais e sonoros de conexão).
+
+Resistores variados.
 
 ---
 
@@ -94,6 +103,43 @@ void loop() {
 }
 
 ---
+
+## 4. Passo a Passo do Setup
+
+fase 1: Montagem Física
+Encaixe o Ethernet Shield sobre o Arduino, alinhando todos os pinos cuidadosamente.
+
+Conecte o Arduino ao roteador via cabo RJ45.
+
+Alimente o Arduino via USB ou fonte externa.
+
+Fase 2: Configuração de Rede (Roteador)
+Nesta etapa, o objetivo é isolar e organizar os endereços IP para evitar conflitos:
+
+Criação da Rede Privada: Acesse a interface do roteador (geralmente 192.168.1.1 ou 192.168.0.1).
+
+Reserva de IP (Static DHCP): * Identifique o MAC Address do seu Ethernet Shield (geralmente adesivado na placa ou definido no código).
+
+No menu "DHCP Server" ou "Address Reservation", vincule o MAC ao IP desejado (ex: 192.168.1.50).
+
+Isso garante que o Arduino sempre terá o mesmo endereço após reiniciar.
+
+Fase 4: Implementação do Código
+Recomenda-se incluir um exemplo básico de Webserver ou Ping Test no repositório. Use blocos de código formatados:
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
 ## 4. imagens do preçedimento 
 ![]()<img width="584" height="727" alt="image" src="https://github.com/user-attachments/assets/9658272f-58d6-4f30-b2a0-d51e65fd37dc" />
 
