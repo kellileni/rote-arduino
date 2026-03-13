@@ -35,7 +35,7 @@ Resistores variados.
 
 ---
 
-## 3. codigos q utilizamos 
+## 2. codigos q utilizamos 
 
 1-/**
   (Arduino Ethernet(configurações básicas da rede)
@@ -104,7 +104,7 @@ void loop() {
 
 ---
 
-## 4. Passo a Passo do Setup
+## 3. Passo a Passo do Setup
 
 fase 1: Montagem Física
 Encaixe o Ethernet Shield sobre o Arduino, alinhando todos os pinos cuidadosamente.
